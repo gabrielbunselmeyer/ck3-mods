@@ -1,0 +1,66 @@
+﻿embrace_english_culture_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+
+	ai_check_interval = 36
+
+	desc = embrace_english_culture_decision_desc
+
+	is_shown = {
+		is_landed = yes
+		has_culture_group = culture_group:frankish_group
+		OR = {	
+			title:k_england = {
+				any_in_de_jure_hierarchy = {
+					root.primary_title = this
+				}
+			}
+			root.primary_title = title:e_britannia
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:embrace_english_culture_decision
+			}
+		}
+	}
+
+	is_valid = {
+		custom_description = {
+			text = capital_in_england_region_tooltip
+			capital_province = {
+				geographical_region = custom_england
+			}
+		}
+		title:k_england.holder = root
+		custom_description = {
+			text = embrace_english_culture_decision_time_passed
+			years_from_game_start > 149
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_imprisoned = no
+		is_available_adult = yes
+	}
+
+	effect = {
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:embrace_english_culture_decision
+		}
+		show_as_tooltip = {
+			embrace_english_culture_effect = yes
+		}
+
+		trigger_event = british_isles.2001
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
