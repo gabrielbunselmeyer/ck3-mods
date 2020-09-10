@@ -1,0 +1,10 @@
+version="0.2"
+tags={
+	"Culture"
+	"Decisions"
+	"Historical"
+}
+name="Norman Improvements"
+supported_version="1.*"
+path="C:/Users/GBPessoal/Documents/Paradox Interactive/Crusader Kings III/mod/ck3-mods/normanImprovements"
+remote_file_id="2223664919"

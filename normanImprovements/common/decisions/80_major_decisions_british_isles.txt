@@ -33,9 +33,20 @@
 			}
 		}
 		title:k_england.holder = root
-		custom_description = {
-			text = embrace_english_culture_decision_time_passed
-			years_from_game_start > 149
+		
+		OR = {
+			custom_description = {
+				text = embrace_english_culture_decision_time_passed
+				current_date >= 1215.1.1
+			}
+
+			AND = {
+				custom_description = {
+					text = embrace_english_culture_decision_time_passed_early
+					current_date >= 1100.1.1
+				}
+				title:e_britannia.holder = root
+			}
 		}
 	}
 
