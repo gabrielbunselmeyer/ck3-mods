@@ -1,4 +1,5 @@
 ﻿l_english:
  embrace_english_culture_decision_time_passed:0 "Year is at least 1215"
  embrace_english_culture_decision_time_passed_early:0 "Year is at least 1100"
- embrace_english_culture_decision_lands_france:0 "Norman nobles hold no lands in France or Aquitaine"
+ embrace_english_culture_decision_lands_france:0 "England rules over no titles in France"
+ embrace_english_culture_decision_lands_aquitaine:0 "England rules over no titles in Aquitaine"
